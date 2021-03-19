@@ -1,2 +1,2 @@
 # Finding-Treasure-x86
-Finding Treasure Booteable game in x86 assembly
+Finding Treasure booteable game in x86 assembly
