@@ -18,14 +18,14 @@ _start:
 
     mov ah, 0xb
     mov bh, 0       ; Set color for background 
-    mov bl, 0x3
+    mov bl, 0x9
     int 10h
 
 
     mov ah, 2
     mov bh, 0
     mov dh, 13      ; move the course to the middle of the screen
-    mov dl, 20
+    mov dl, 18
     int 0x10
 
     mov si, msg     ; Loads the address of "msg" into SI register
@@ -36,7 +36,7 @@ _print:
 	je _keypress	; if the message is displayed, wait for option pressing
 	mov ah, 0Eh     ; Print AL
 	mov bh, 0       
-    mov bl, 0x8     
+    mov bl, 0x7     
 	int 10h
     call _delay     ; milliseconds delay to appreciate letter appearance effect
 	jmp _print      ; jmp to write the next character
@@ -92,4 +92,4 @@ _read:
 _back:
     jmp 0x7C0:0x0   ; jump to previous memory section
 
-msg db "Would you like to start Tanks? (y/n)"
+msg db "Would you like to start Finding Treasure? (y/n)"
