@@ -1,9 +1,3 @@
-;----------------------------------------------------------------------------------------------------------------------------------------------------------------
-;   asm-x86-game
-;   This is a modified code obtained at https://github.com/igormp/asm-x86-game
-;   Author fbsouza
-;----------------------------------------------------------------------------------------------------------------------------------------------------------------
-
 BITS 16             ; tell the assembler that we're using 16 bit mode
 org 0x500           ; Sets the start addres for boot2 code
 jmp 0x0000:_start   ; charges the DS with 0 via a far jump

@@ -1,7 +1,7 @@
 ASMFLAGS = -f bin
 SOURCE = ./src/
 BIN = ./bin/
-USB = dev/yenmari11
+USB = /dev/sdc1
 
 bootdisk=disk.img
 blocksize=512
